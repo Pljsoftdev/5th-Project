@@ -1,4 +1,68 @@
-.grid-container {
+/* Total Page */
+* {
+    box-sizing: border-box;
+}
+html {
+    min-height: 100vh;
+     max-width: 1250px; 
+    margin: 0 auto;
+}
+/* Control's color of Background*/
+body {
+    padding: 25px;
+    background-image: linear-gradient( #9fd3f8, #0396FF);
+    background-position: top left;
+}
+/* Title top of the webpage */
+.heading {
+    color: #4B0082;
+    text-align: center;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Search Bar Instructions */
+.s-text {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px #710bb9;
+}
+
+/* Grid Container, Makes Layout Responsive */
+.gallery {
     display: grid;
-    
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
 } 
+/* Grid Items, Images */
+.gallery img {
+    height: auto;
+    width: 100%;    
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+/* Search Bar */
+input {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+input:focus {
+    box-shadow: 0 0 4px 2px rgba(141, 129, 129, 0.2);
+    outline: 0;
+}
+
+input:hover {
+    box-shadow: 0 0 10px 10px rgb(110, 209, 123);
+}
